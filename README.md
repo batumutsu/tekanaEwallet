@@ -24,7 +24,7 @@ If the pilot is successful, we will roll out the solution to the full user base 
 
 BACK-END SOLUTIONS WAS IMPLEMENTED USING SPRING BOOT FRAMEWORK:
 
-The following are the some of the minimum required features included in the solution:
+The following are the minimum required features included in the solution:
 
 Customer Registration: This service will handle the creation and management of customer accounts. It will provide APIs for registering new customers, as well as retrieving and updating existing customer information.
 
