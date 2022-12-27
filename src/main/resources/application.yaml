@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/tekanaewalletschema?useSSL=false
+    username: root
+    password: Rra@123.123
+
+  #JPA Settings
+  # Log SQL statements
+  jpa.show-sql: true
+  # Hibernate database Dialect
+  jpa.properties.hibernate.dialect: org.hibernate.dialect.MySQL8Dialect
+  # Hibernate ddl auto for generating the database schema
+  jpa.hibernate.ddl_auto: create-drop
+
+#spring swagger configuration
+springdoc:
+  swagger-ui:
+    enabled: true
