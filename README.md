@@ -1,5 +1,6 @@
 # tekanaEwallet
-Tekana Ewallet RSSB was implemented using Spring Boot Framework
+Tekana Ewallet RSSB was implemented using Spring Boot Framework with MYSQL 
+for database storage(configurations for MYSQL database are located in application.yaml file)
 
 STRATEGY:
 
