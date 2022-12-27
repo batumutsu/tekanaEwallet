@@ -11,7 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController
@@ -20,7 +19,7 @@ public class CustomerController {
     @Autowired
     private CustomerService customerService;
 
-    @Operation(summary = "Get Customers", description = "Get a list of all customers", tags = "Get")
+    @Operation(summary = "Get all customer details", description = "Get a list of all customers", tags = "Get")
     @ApiResponses(value =  {
             @ApiResponse(responseCode = "200", description = "Customers found",
                     content = {@Content(mediaType = "application/json",
@@ -32,7 +31,7 @@ public class CustomerController {
         return customerService.getAllCustomers();
     }
 
-    @Operation(summary = "Get a customer", description = "Get details for customer", tags = "Get")
+    @Operation(summary = "Get a customer details", description = "Get details for customer", tags = "Get")
     @ApiResponses(value =  {
             @ApiResponse(responseCode = "200", description = "Customer details found",
                     content = {@Content(mediaType = "application/json",
@@ -57,7 +56,7 @@ public class CustomerController {
         return ResponseEntity.status(HttpStatus.CREATED).body(createdCustomer);
     }
 
-    @Operation(summary = "update customer details", description = "This endpoint will help us, to update a customer details", tags = "Put")
+    @Operation(summary = "Update customer details", description = "This endpoint will help us, to update a customer details", tags = "Put")
     @ApiResponses(value =  {
             @ApiResponse(responseCode = "200", description = "Customer updated",
                     content = {@Content(mediaType = "application/json",

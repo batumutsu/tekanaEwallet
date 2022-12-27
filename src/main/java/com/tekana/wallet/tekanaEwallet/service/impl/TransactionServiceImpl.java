@@ -6,6 +6,7 @@ import com.tekana.wallet.tekanaEwallet.service.TransactionService;
 import com.tekana.wallet.tekanaEwallet.service.WalletService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -31,6 +32,11 @@ public class TransactionServiceImpl implements TransactionService {
     public Transaction getTransactionDetails(Long transactionId) {
         Optional<Transaction> transaction = transactionRepository.findById(transactionId);
         return transaction.isPresent() ? transaction.get() : null;
+    }
+
+    @Override
+    public List<Transaction> getCustomerTransactionsDetails(Long customerId) {
+        return transactionRepository.findTransactionsBySource_Customer_IdOrDestination_CustomerId(customerId, customerId);
     }
 }
 
