@@ -2,6 +2,9 @@
 Tekana Ewallet RSSB was implemented using Spring Boot Framework with MYSQL 
 for database storage(configurations for MYSQL database are located in application.yaml file)
 
+After successfully running the application you can use postman to interact and test different endpoints our application API
+go to url="http://localhost:8080/swagger-ui/index.html" and use swagger-ui to interact with different endpoints of our API. 
+
 STRATEGY:
 
 First, we will gather requirements from the business team and the product owner to understand the goals and objectives of the new back-end solution for Tekana-ewallet. This will help us to create a clear scope and plan for the project.
