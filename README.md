@@ -37,3 +37,5 @@ Wallet Management: This service will handle the creation and management of custo
 Transaction Management: This service will handle the creation and management of transactions. It will provide APIs for creating new transactions, as well as retrieving and updating existing transaction information.
 
 Each of these features will be implemented as a separate Spring Boot microservice, with a set of REST APIs exposed for front-end developers to interact with.
+
+It is always best to containerized your environment.
